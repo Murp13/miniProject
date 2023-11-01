@@ -1,0 +1,57 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 60px;
+    align-items: flex-start;
+    background-color: #76C4AE;
+    height: 65px;
+    padding: 16px 40px;
+    margin-bottom: auto;
+
+}
+
+.navbar-left{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.logo{
+    font-weight: 900;
+    font-size: 23px;
+    margin-left: -20px;
+}
+
+/* .seacrh{
+    width: 100px;
+    
+} */
+
+.navbar-nav{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-nav li{
+    margin: 0px 10px;
+    width: auto;
+    display: flex;
+    gap: 8px;
+}
+
+
+.navbar-right{
+    float: right;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    /* display: none; */
+}
+.navbar-right li{
+    list-style: none;
+}
+
+.nav-auth-button{
+    gap: 5px;
+}
