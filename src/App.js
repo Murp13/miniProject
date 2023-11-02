@@ -29,7 +29,7 @@ function App() {
   return (
     <> 
         <div className='App'>
-          {/* <Navbar /> */}
+          <Navbar />
           <Routes>  
           <Route path="/" />
           <Route path="/order-summary" element={<Ordersummary/>} /> 

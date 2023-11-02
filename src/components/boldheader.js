@@ -1,13 +1,12 @@
 import { Center, Heading, Text } from '@chakra-ui/react'
 
-function Bold(props) {
+function Boldheader(props) {
     return (
         <Center>
-        <Text as= 'b'>{props.Text}</Text>
+        <Heading>{props.Text}</Heading>
         </Center>
      
     );
   }
 
-  
-  export default Bold;
+  export default Boldheader;

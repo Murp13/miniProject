@@ -1,0 +1,17 @@
+{
+    "ticketClasses": [
+      {
+        "id" : 1,
+        "type": "Reguler",
+        "price": 1000,
+        "quantity": 10
+      },
+      {
+        "id" : 2,
+        "type": "VIP",
+        "price": 2000,
+        "quantity": 5
+      }
+    ]
+  }
+  
