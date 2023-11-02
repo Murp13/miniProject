@@ -21,7 +21,7 @@ function Ordersummary() {
   const [ticketData, setTicketData] = useState([]);
 
   useEffect(() => {
-    // Fetch event data
+
     Axios.get('http://localhost:3002/eventInfo')
       .then((response) => {
         console.log('Received event data:', response.data); 
@@ -32,7 +32,6 @@ function Ordersummary() {
         console.error('Error fetching event data: ', error);
       });
 
-    // Fetch ticket data
     Axios.get('http://localhost:3001/ticketClasses')
       .then((response) => {
         console.log('Received ticket data:', response.data);
