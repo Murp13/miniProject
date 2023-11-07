@@ -1,0 +1,31 @@
+{
+    "referral": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "code_name": "1234QGy",
+            "code_usage": 0,
+            "code_used": 0,
+            "discount":0.1
+          },
+        {
+            "id": 2,
+            "user_id": 2,
+            "code_name": "QUYT54",
+            "code_usage": 0,
+            "code_used": 0,
+            "discount":0.1
+          },
+        {
+            "id": 3,
+            "user_id": 3,
+            "code_name": "POLKI98",
+            "code_usage": 0,
+            "code_used": 0,
+            "discount":0.1
+          }
+        ]
+}
+
+
+  

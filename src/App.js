@@ -35,7 +35,7 @@ function App() {
           <Route path="/order-summary" element={<Ordersummary/>} /> 
           <Route path="/e-ticket" element={<AfterPayment/>} />
           <Route path="/transaction" element={<Transaction/>} />
-          {/* <Route path="/upload" element={<UploadImage/>} /> */}
+          <Route path="/upload" element={<UploadImage/>} />
           </Routes> 
           </div>
 

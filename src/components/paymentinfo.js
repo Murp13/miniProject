@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Text, Grid, GridItem, Flex } from '@chakra-ui/react';
+import formatPriceToIDR from '../utils/priceFormat';
 
 const TicketPriceCard = ({ ticketData }) => {
-  const discount = 8000; 
-  const serviceFee = 0; 
-
+  const discount = 8000; // Fixed discount value
+  const serviceFee = 0; // Fixed service fee value
 
   const [totalTicketPrice, setTotalTicketPrice] = useState(0);
 
@@ -18,7 +18,13 @@ const TicketPriceCard = ({ ticketData }) => {
     }
   }, [ticketData]);
 
+  // Calculate the totalPayment
   const totalPayment = totalTicketPrice - discount + serviceFee;
+
+  // Format the totalTicketPrice and totalPayment using formatPriceToIDR
+  const fTotalTicketp = formatPriceToIDR(totalTicketPrice);
+  const fTotalPay = formatPriceToIDR(totalPayment);
+  const fDiscount = formatPriceToIDR(discount);
 
   return (
     <Box
@@ -42,10 +48,10 @@ const TicketPriceCard = ({ ticketData }) => {
         </GridItem>
         <GridItem colSpan={1}>
           <Flex flexDirection="column" alignItems="flex-end">
-            <Text>Rp {totalTicketPrice}</Text>
-            <Text>Rp {discount}</Text>
+            <Text>{fTotalTicketp}</Text>
+            <Text>{fDiscount}</Text>
             <Text>Gratis</Text>
-            <Text>Rp {totalPayment}</Text>
+            <Text as='b'>{fTotalPay}</Text> 
           </Flex>
         </GridItem>
       </Grid>

@@ -21,7 +21,7 @@ const useUpload = () => {
       formData.append("image", image);
       const res = await axios.post("/", formData);
       if (res.data.data) {
-        console.log(res.data);
+        // console.log(res.data);
         setUploadedImage(res.data.data);
         toast({
           title: "Image Uploaded",
@@ -32,7 +32,7 @@ const useUpload = () => {
         });
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     } finally {
       setImage(null);
       setLoading(false);
@@ -45,7 +45,7 @@ const useUpload = () => {
 
       const res = await axios.delete(`/${uploadedImage.imageName}`);
       if (res.data) {
-        console.log(res.data);
+        // console.log(res.data);
         setUploadedImage(null);
         toast({
           title: "Image Deleted",
@@ -56,7 +56,7 @@ const useUpload = () => {
         });
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     } finally {
       setLoading(false);
     }

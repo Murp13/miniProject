@@ -1,0 +1,43 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "user_id": 4,
+            "event_location_id": 1,
+            "category_id": 1,
+            "title": "Cidro Janji Bancaan Geys",
+            "start_date": "18-11-2023",
+            "end-date": "18-11-2023",
+            "event_time": "18:00",
+            "event_location": "asram Edupark",
+            "ticket_price": "0",
+            "available_tickets": "200",
+            "event_description": "Okeeiii",
+            "address": "Gejayan",
+            "image":  "../Asset/banner1.jpg",
+            "status_event": "cancelled",
+            "type_event": "free"
+          },
+        {
+            "id": 2,
+            "user_id": 5,
+            "event_location_id": 1,
+            "category_id": 1,
+            "title": "Holy Water",
+            "start_date": "19-11-2023",
+            "end-date": "19-11-2023",
+            "event_time": "21:00",
+            "event_location": "asram Edupark",
+            "ticket_price": 100000,
+            "available_tickets": 1000,
+            "event_description": "Okeeiii2",
+            "address": "Gondo",
+            "image":  "../Asset/banner1.jpg",
+            "status_event": "cancelled",
+            "type_event": "paid"
+          }
+        ]
+}
+
+
+  

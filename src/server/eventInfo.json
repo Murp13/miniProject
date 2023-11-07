@@ -4,7 +4,8 @@
             "eventName": "Cidro Janji Bancaan Geys",
             "eventDate": "15-11-2023",
             "eventTime": "18:00",
-            "eventLocation": "Purwokerto"
+            "eventLocation": "Purwokerto",
+            "eventBanner": "../Asset/banner1.jpg"
           }
         ]
 }

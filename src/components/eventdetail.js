@@ -7,11 +7,11 @@ import { MdDateRange } from 'react-icons/md'
 import { BiSolidTime } from 'react-icons/bi'
 
 function Buyingcard(props) {
-  console.log('Received props:', props);
-  console.log('eventName:', props.eventName); 
-  console.log('eventDate:', props.eventDate); 
-  console.log('eventTime:', props.eventTime); 
-  console.log('eventLocation:', props.eventLocation);
+  // console.log('Received props:', props);
+  // console.log('eventName:', props.eventName); 
+  // console.log('eventDate:', props.eventDate); 
+  // console.log('eventTime:', props.eventTime); 
+  // console.log('eventLocation:', props.eventLocation);
   return (
     <>
        <Card

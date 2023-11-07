@@ -1,19 +1,50 @@
 import React from 'react';
-import { ChakraProvider, Box, Input, Button, Text } from '@chakra-ui/react';
+import { ChakraProvider, Box, Input, Button, Text, useToast } from '@chakra-ui/react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
-  voucherCode: Yup.string().required('Voucher code is required'),
+  voucherCode: Yup.string(),
 });
 
 const VoucherValidationCard = () => {
-  const handleSubmit = (values, actions) => {
+  const toast = useToast();
 
+  const handleSubmit = async (values, actions) => {
+    if (!values.voucherCode) {
+      // Show a toast message when the voucher code is empty
+      toast({
+        title: 'Missing Voucher Code',
+        description: 'You can get a discount price from a referral code.',
+        status: 'warning', // You can customize this to 'info' or 'warning' as needed
+        duration: 5000, // How long the toast message should be visible
+        isClosable: true, // Allow the user to close the toast manually
+      });
+    } else {
+      // Simulate applying the voucher (you can replace this with your actual logic)
+      await applyVoucher(values.voucherCode);
+
+      // Show a toast message when the voucher is applied
+      toast({
+        title: 'Voucher Applied',
+        description: 'The voucher has been applied successfully.',
+        status: 'success',
+        duration: 5000, // How long the toast message should be visible
+        isClosable: true, // Allow the user to close the toast manually
+      });
+
+      // Reset the form or perform any other necessary actions
+      actions.resetForm();
+    }
+  };
+
+  // You can create a function to apply the voucher logic here
+  const applyVoucher = async (voucherCode) => {
+    // Replace this with your actual voucher application logic
   };
 
   return (
-    <ChakraProvider>
+    <>
       <Box
         maxW="md"
         borderWidth="1px"
@@ -24,7 +55,7 @@ const VoucherValidationCard = () => {
         boxShadow="lg"
       >
         <Text fontSize="lg" as="b" mb={4}>
-         Kode Potongan 
+          Kode Potongan
         </Text>
         <Formik
           initialValues={{ voucherCode: '' }}
@@ -51,7 +82,7 @@ const VoucherValidationCard = () => {
           </Form>
         </Formik>
       </Box>
-    </ChakraProvider>
+    </>
   );
 };
 

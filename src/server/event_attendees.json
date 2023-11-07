@@ -1,0 +1,23 @@
+{
+    "event_attendees": [
+        {
+            "id": 1,
+            "name": "Rudy Lestari",
+            "referral_code": 1,
+            "address": "Gondocatur",
+            "event_id": 1
+
+
+          },
+        {
+            "id": 2,
+            "name": "Putri Amani",
+            "referral_code": 1,
+            "address": "Gondokusuma",
+            "event_id": 2
+
+          }
+
+
+        ]
+}

@@ -3,10 +3,10 @@ import { Card, CardBody, Flex, Spacer } from "@chakra-ui/react";
 import { Heading, Stack, Text, Box, StackDivider } from '@chakra-ui/react';
 
 function Buyingticket(props) {
-  console.log('Received props:', props); 
-  console.log('type:', props.type); 
-  console.log('qty:', props.qty); 
-  console.log('price:', props.price); 
+  // console.log('Received props:', props); 
+  // console.log('type:', props.type); 
+  // console.log('qty:', props.qty); 
+  // console.log('price:', props.price); 
   return (
     <>
     <Card>
@@ -22,7 +22,7 @@ function Buyingticket(props) {
           </Flex>
           <Box>
             <Heading size='xs' >
-            {props.qty} x Rp {props.price}
+            {props.qty} x {props.price}
             </Heading>
           </Box>
         </Stack>

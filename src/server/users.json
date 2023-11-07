@@ -1,0 +1,53 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "fullname": "Harry Setiawan",
+            "email": "harrysetiawan@gmail.com",
+            "password_hash": "15etye6",
+            "point": "3000",
+            "status": 1,
+            "role_id": 2
+          },
+        {
+            "id": 2,
+            "fullname": "Rudy Lestari",
+            "email": "rudyl@gmail.com",
+            "password_hash": "0po98uo",
+            "point": "3000",
+            "status": 0,
+            "role_id": 2
+          },
+        {
+            "id": 3,
+            "fullname": "Putri Amani",
+            "email": "putriam@gmail.com",
+            "password_hash": "H7hdg8f7",
+            "point": "3000",
+            "status": 1,
+            "role_id": 2
+          },
+        {
+            "id": 4,
+            "fullname": "Dian Wahyu",
+            "email": "diianw@gmail.com",
+            "password_hash": "64nfhsk7d",
+            "point": "3000",
+            "status": 0,
+            "role_id": 1
+          },
+        {
+            "id": 5,
+            "fullname": "Putra Sando",
+            "email": "psando@gmail.com",
+            "password_hash": "0lay5",
+            "point": "3000",
+            "status": 1,
+            "role_id": 1
+          }
+
+        ]
+}
+
+
+  

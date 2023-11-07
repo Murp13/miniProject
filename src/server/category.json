@@ -1,0 +1,15 @@
+{
+    "category": [
+        {
+            "id": 1,
+            "name": "Bazaar"
+
+          },
+        {
+            "id": 2,
+            "name": "Festival"
+
+          }
+
+        ]
+}
