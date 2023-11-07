@@ -1,8 +1,8 @@
 import React from 'react';
 import { Center, Card, CardBody, StackDivider, Box, Button, Text, Divider, Stack, Heading, Flex, HStack, VStack } from '@chakra-ui/react';
-import { FaLocationDot } from 'react-icons/fa6';
-import { MdDateRange } from 'react-icons/md';
-import { BiSolidTime } from 'react-icons/bi';
+// import { FaLocationDot } from 'react-icons/fa6';
+// import { MdDateRange } from 'react-icons/md';
+// import { BiSolidTime } from 'react-icons/bi';
 import Checkout from './button';
 
 
@@ -13,7 +13,7 @@ function TicketView() {
       <Stack direction='column' alignItems='center' spacing={4}>
         <Card divider={<StackDivider borderColor={'grey'} />} mt={"30"} maxWidth={"600px"} mb={'10px'}>
           <CardBody bg="white" borderRadius="lg" boxShadow="lg">
-            <Stack spacing={8} direction='row' my={"10px"} display='flex' justifyContent='space-between' alignItems='center' width='100%'>
+            <Stack spacing={8} direction='row' my="16px" display='flex' justifyContent='space-between' alignItems='center' width='100%'>
               <Box>
                 <Heading mb={4}>Terima Kasih!</Heading>
                 <Divider size="lg" variant="thick" colorScheme="brand" opacity={0.5} borderColor="grey" />

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Stack, Box, Text, StackDivider, Center, Card, CardHeader, CardBody, ButtonGroup, Spacer } from '@chakra-ui/react';
+import Axios from "axios";
+
 import Buyingticket from '../components/infoticket';
 import VoucherValidationCard from '../components/vouchervalid';
 import Buyingcard from '../components/eventdetail';
@@ -9,7 +11,6 @@ import detailPemesanan from "../server/eventInfo.json"
 import TicketPriceCard from '../components/paymentinfo';
 import BackButton from '../components/backbutton';
 import Checkout from '../components/button';
-import Axios from "axios";
 
 import Footer from '../components/footer';
 // import Bold from '../components/boldtext';
