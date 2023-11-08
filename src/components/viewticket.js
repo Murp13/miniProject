@@ -65,7 +65,7 @@ function TicketView() {
         <Button colorScheme='blue' size='sm' p={2}>
           View Ticket
         </Button>
-        <Checkout Name="Kembali ke Home" size="md" />
+        <Button colorScheme='orange' size="md" mb= '5rem'>Kembali he Home</Button> 
       </Stack>
     </Center>
   );
